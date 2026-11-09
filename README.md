@@ -1,83 +1,158 @@
-# رقيب · RAQEEB — Interface Prototype
+# RAQEEB | AI-Powered Regulatory Intelligence & Compliance
 
-A standalone static export of the RAQEEB interface prototype: an RTL Arabic landing
-page with a 3D radar globe, a light/dark theme toggle, a live alerts feed, a
-compliance dashboard, and an interactive demo of compliance analysis.
+<p align="center">
+  <strong>Transforming Regulatory Changes into Actionable Compliance Insights.</strong>
+</p>
 
-**All data is demo data hard-coded in `js/main.js`.** The site does not call any
-backend, database, API, or AI service. It needs no account, login, API key, or build step.
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge" alt="AI-Powered">
+  <img src="https://img.shields.io/badge/GRC-Regulatory%20Intelligence-purple?style=for-the-badge" alt="GRC">
+  <img src="https://img.shields.io/badge/Project-Prototype-orange?style=for-the-badge" alt="Prototype">
+</p>
 
-## Project structure
+---
 
+## Overview
+
+RAQEEB is an AI-powered regulatory intelligence platform designed to help organizations monitor regulatory updates, identify changes, understand their implications, and translate them into structured compliance insights.
+
+Organizations operate in an evolving regulatory environment where keeping track of multiple authorities, interpreting new requirements, and assessing their potential impact can be challenging.
+
+RAQEEB aims to simplify this process by combining artificial intelligence, regulatory analysis, and Governance, Risk, and Compliance (GRC) principles within a unified workflow.
+
+The goal is to move beyond simply collecting regulatory updates — towards understanding what changed, why it matters, and what organizations may need to address.
+
+## The Challenge
+
+Regulatory compliance requires continuous attention to changing requirements. Organizations need to do more than read new publications; they need to identify relevant changes and understand how these changes may affect their operations.
+
+Key challenges include:
+
+- Monitoring updates across multiple regulatory sources.
+- Identifying new or modified regulatory requirements.
+- Comparing current and previous regulatory versions.
+- Extracting effective dates and supporting evidence.
+- Understanding potential implications for organizational compliance.
+- Turning regulatory information into actionable follow-up.
+
+## How It Works
+
+The platform follows a connected workflow that transforms regulatory publications into organized compliance insights.
+
+```mermaid
+flowchart TD
+    A["Regulatory Sources"] --> B["Content Collection & Extraction"]
+    B --> C["Regulatory Change Detection"]
+    C --> D["AI-Powered Analysis"]
+    D --> E["Compliance Insights & Recommendations"]
+    E --> F["Email Notifications"]
+    E --> G["In-App Notifications"]
 ```
-raqeeb-prototype/
-├── index.html            # Page markup
-├── css/styles.css        # All styles (theme tokens, layout, responsive rules)
-├── js/main.js            # Interactions: theme toggle, feed, demo, gauge, 3D globe
-├── vendor/               # Optional local copy of three.js (see vendor/README.md)
-├── scripts/fetch-vendor.sh
-├── .nojekyll             # Tells GitHub Pages to serve files as-is
-└── README.md
-```
 
-## Run locally
+### Workflow Stages
 
-**Option A, open the file:** double-click `index.html`. It opens in any modern browser.
+| Stage | Description |
+|---|---|
+| Regulatory Monitoring | Collecting updates from relevant regulatory sources. |
+| Content Extraction | Extracting information from regulatory publications and documents. |
+| Change Detection | Comparing regulatory versions to identify new or modified content. |
+| AI-Powered Analysis | Analyzing regulatory information and organizing relevant findings. |
+| Compliance Insights | Presenting requirements, effective dates, and potential implications. |
+| Notifications | Delivering updates through email and in-app notifications. |
 
-**Option B, local server (recommended):** run one of these from the project folder,
-then open http://localhost:8000
+## Core Capabilities
 
-```bash
-python -m http.server 8000      # Python 3
-# or
-npx serve .                     # Node.js
-```
+| Capability | Value |
+|---|---|
+| **Regulatory Monitoring** | Supports continuous tracking of regulatory developments. |
+| **Change Detection** | Highlights differences between regulatory versions. |
+| **Effective-Date Analysis** | Identifies effective dates supported by regulatory evidence. |
+| **Compliance Impact Analysis** | Helps assess the implications of regulatory changes. |
+| **Recommendations & Alerts** | Supports awareness and follow-up on relevant changes. |
+| **Evidence-Based Insights** | Connects findings to supporting regulatory sources. |
 
-In VS Code you can also use the "Live Server" extension: right-click `index.html`
-and choose **Open with Live Server**.
+## Regulatory Coverage
 
-## Deploy to GitHub Pages
+RAQEEB is designed to monitor Saudi regulatory sources, including:
 
-1. Create a new public repository on GitHub, e.g. `raqeeb-prototype`.
-2. Upload the **contents** of this folder to the repo root, so `index.html` sits at
-   the top level. Either drag and drop the files on GitHub's web page
-   (**Add file → Upload files**), or use git:
-   ```bash
-   git init
-   git add .
-   git commit -m "RAQEEB interface prototype"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/raqeeb-prototype.git
-   git push -u origin main
-   ```
-3. In the repo, open **Settings → Pages**. Under **Build and deployment**, set
-   **Source: Deploy from a branch**, **Branch: `main`**, folder **`/ (root)`**, and save.
-4. After a minute or two the site is live at
-   `https://<your-username>.github.io/raqeeb-prototype/`.
+- **NCA** — National Cybersecurity Authority.
+- **SASO** — Saudi Standards, Metrology and Quality Organization.
+- **Umm Al-Qura** — Saudi Arabia's Official Gazette.
+- **Ministry of Energy** — Regulatory publications and updates.
 
-All paths are relative, so the site also works on Netlify, Vercel, Cloudflare
-Pages, or any static host. Upload the folder as-is; there is no build command, and
-the output directory is the project root.
+The connector-based approach is designed to accommodate additional regulatory sources as the platform evolves.
 
-## External resources
+## Organizational Context
 
-The page loads two free public resources over the internet. Neither needs a key or an account:
+Regulatory requirements do not affect every organization in the same way. Their relevance depends on the organization's industry, activities, operations, and applicable frameworks.
 
-| Resource | Source | If it is unavailable |
-|---|---|---|
-| IBM Plex Sans Arabic / IBM Plex Mono fonts | Google Fonts | The page falls back to system fonts |
-| three.js r128 (3D globe) | cdnjs, falling back to `vendor/three.min.js` | A static gradient background replaces the globe |
+RAQEEB incorporates organizational context to support more relevant regulatory analysis, considering:
 
-To run fully offline, add the local three.js copy as described in `vendor/README.md`.
+- Industry sectors and business activities.
+- Regulatory jurisdictions and applicable frameworks.
+- Products and operational processes.
+- Internal policies and compliance requirements.
 
-## Responsive & accessibility
+## Technology Stack
 
-- Breakpoints at 1150 / 1000 / 900 / 760 / 520 px cover desktop, tablet, and mobile.
-- The layout respects `prefers-color-scheme`, has a manual theme toggle, honors
-  `prefers-reduced-motion`, and supports safe-area insets on notched phones.
+| Area | Technologies |
+|---|---|
+| Programming Language | Python |
+| Backend Framework | FastAPI |
+| Database & ORM | SQLite, SQLAlchemy |
+| AI Integration | Anthropic Claude, Structured Tool Use |
+| Data Extraction | Web Content Processing, PDF Extraction |
+| Scheduling | APScheduler |
+| Notifications | Email, In-App Notifications |
+| Testing | Pytest |
 
-## Editing the demo content
+*The technologies above describe the broader RAQEEB project. This public repository showcases the frontend prototype and presentation, not the private backend implementation.*
 
-- **Alerts feed:** the `pool` array in `js/main.js`
-- **Interactive demo cases:** the `cases` array in `js/main.js`
-- **Colors:** the CSS variables at the top of `css/styles.css` (`--brand`, `--surface-0`, …)
+## Evidence-Based Decision Support
+
+A central principle of RAQEEB is that regulatory insights should be traceable to their supporting sources.
+
+The platform emphasizes connecting identified changes, extracted requirements, and effective dates to relevant regulatory evidence. This supports transparency, review, and a clearer understanding of the regulatory basis behind analytical findings.
+
+## My Role & Contributions
+
+I contributed to RAQEEB across three interconnected areas:
+
+### AI Developer
+- Contributed to the development of the AI Agent's logic and analytical workflow.
+- Worked on regulatory information analysis and the organization of structured outputs.
+- Contributed to processing logic that transforms regulatory information into useful insights.
+
+### GRC Analyst
+- Analyzed regulatory information and compliance requirements.
+- Examined regulatory changes and their potential implications for organizational compliance.
+- Contributed to connecting regulatory analysis with organizational requirements.
+
+### Frontend Development
+- Collaborated with the team on developing the user interface.
+- Contributed to presenting platform capabilities and analytical outputs through a clear user experience.
+
+## Live Prototype
+
+Explore the public-facing RAQEEB prototype:
+
+[**Launch RAQEEB Prototype →**](https://rana-aljarboua.github.io/RAQEEB-Prototype/)
+
+## Project Presentation
+
+Explore the project concept, objectives, and overall approach:
+
+[**View Project Presentation (PDF) →**](./Raqeeb%20Presentation.pdf)
+
+## Repository Scope
+
+This public repository serves as a portfolio showcase for the RAQEEB frontend prototype and project presentation.
+
+It is separate from the original private project repository and does not include the private backend, database, or internal source code.
+
+---
+
+<p align="center">
+  <strong>RAQEEB</strong><br>
+  Bridging Artificial Intelligence, Regulatory Intelligence, and Compliance.
+</p>
