@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>رقيب</title>
+<meta name="description" content="رقيب — نموذج أولي لوكيل ذكي يرصد التغيرات التنظيمية ويدير الامتثال.">
+<meta name="theme-color" content="#07130F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="fallback" aria-hidden="true"></div>
+<canvas id="scene" aria-hidden="true"></canvas>
+
+<div class="page" dir="rtl" lang="ar">
+  <header>
+    <div class="wrap">
+      <nav class="nav glass" aria-label="التنقل الرئيسي">
+        <a class="logo" href="#top" aria-label="رقيب، العودة للأعلى"><span class="logo-mark" role="img" aria-label="شعار رقيب"></span></a>
+        <div class="links">
+          <a href="#problem">المشكلة</a>
+          <a href="#demo">النموذج الأولي</a>
+          <a href="#ai">الذكاء الاصطناعي</a>
+          <a href="#team">الفريق</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-btn" id="themeBtn" type="button">الوضع الفاتح</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span>رصد تنظيمي مستمر · 24/7</div>
+        <h1>كل تغيّر تنظيمي <em>يُرصد</em> قبل أن يصبح مخالفة.</h1>
+        <p class="lead">رقيب وكيل ذكي يتابع الأنظمة واللوائح السعودية، ويحلّل أثر كل تغيّر على منتجات شركتك وعملياتها، ثم يقترح قرارًا وخطة عمل واضحة.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#demo" target="_blank" rel="noopener">جرّب النموذج الأولي</a>
+        </div>
+      </div>
+
+      <aside class="feed glass" aria-label="آخر التغيّرات المرصودة">
+        <div class="feed-head">
+          <h2>آخر ما رُصد</h2>
+          <span class="tag-ex">أمثلة توضيحية</span>
+        </div>
+        <ul class="alerts" id="alerts">
+          <li class="alert"><span class="src">NCA</span><span class="t">تحديث على الضوابط الأساسية للأمن السيبراني<small>يؤثر على: إدارة الهويات والصلاحيات</small></span><span class="pill high">أثر عالٍ</span></li>
+          <li class="alert"><span class="src">SASO</span><span class="t">لائحة فنية محدّثة لمنتجات الأجهزة الكهربائية<small>يؤثر على: 3 خطوط إنتاج</small></span><span class="pill mid">يحتاج مراجعة</span></li>
+          <li class="alert"><span class="src">ENV</span><span class="t">متطلبات تقارير الانبعاثات الصناعية<small>يؤثر على: موقع الجبيل</small></span><span class="pill ok">ممتثل</span></li>
+        </ul>
+      </aside>
+    </div>
+
+    <section id="problem">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>المشكلة التي يعالجها رقيب مباشرة</h2>
+          <p>تحدي "وكيل ذكي لرصد التغيرات التنظيمية وإدارة الامتثال" لشركة الإلكترونيات المتقدمة (SAMI).</p>
+        </div>
+        <div class="ps">
+          <div class="ps-col glass">
+            <h3 class="ps-h bad">اليوم</h3>
+            <ul class="ps-list">
+              <li>التغيّرات تصدر من جهات كثيرة وبوتيرة عالية، ومتابعتها يدويًا تستهلك وقت الفريق.</li>
+              <li>تحديث واحد يفوت قد يعني مخالفة أو إيقاف شحنة أو منتج.</li>
+              <li>الصعب ليس قراءة الخبر، بل معرفة أي منتج أو عملية يتأثر به وماذا نفعل.</li>
+            </ul>
+          </div>
+          <div class="ps-arrow" aria-hidden="true">←</div>
+          <div class="ps-col glass">
+            <h3 class="ps-h good">مع رقيب</h3>
+            <ul class="ps-list">
+              <li><b>رصد آلي مستمر</b> لمصادر الجهات التنظيمية.</li>
+              <li><b>تحليل أثر</b> يربط كل تغيّر بمنتجات الشركة وعملياتها.</li>
+              <li><b>قرار مقترح وخطة عمل</b> بأولويات ومسؤوليات ومواعيد.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>رحلة واضحة: من الخبر التنظيمي إلى خطة عمل</h2>
+          <p>مصمَّم لمسؤول الامتثال: أربع خطوات متتابعة، وكل خطوة تبني على السابقة، والقرار النهائي يبقى للإنسان.</p>
+        </div>
+        <div class="steps" id="steps">
+          <div class="step glass"><span class="n">01 · رصد</span><h3>يلتقط التغيّر</h3><p>يتابع مصادر الجهات التنظيمية ويلتقط أي تعديل أو لائحة جديدة فور نشرها.</p><div class="bar"><span></span></div></div>
+          <div class="step glass"><span class="n">02 · تحليل</span><h3>يقيس الأثر</h3><p>يربط التغيّر بمنتجاتك وعملياتك ويحدد ما يتأثر وبأي درجة.</p><div class="bar"><span></span></div></div>
+          <div class="step glass"><span class="n">03 · قرار</span><h3>يقترح القرار</h3><p>يصيغ قرار امتثال مقترحًا مع المبررات والمرجع النظامي.</p><div class="bar"><span></span></div></div>
+          <div class="step glass"><span class="n">04 · تنفيذ</span><h3>يرتّب الخطة</h3><p>خطة عمل مرتبة حسب الأولوية، بمسؤوليات ومواعيد واضحة.</p><div class="bar"><span></span></div></div>
+        </div>
+        <div class="ux-points">
+          <span>واجهة عربية أولًا ومن اليمين لليسار</span>
+          <span>لون واحد لكل حالة: ممتثل · يحتاج مراجعة · أثر عالٍ</span>
+          <span>كل توصية معها مرجعها</span>
+          <span>يعمل على الجوال والحاسب</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>جرّب رقيب: اختر تغيّرًا وشاهد التحليل</h2>
+          <p>عرض تفاعلي لمخرجات النموذج الأولي. البيانات أمثلة توضيحية.</p>
+        </div>
+        <div class="demo glass">
+          <div class="demo-list" role="tablist" aria-label="تغيّرات تنظيمية للتجربة" id="demoList"></div>
+          <div class="demo-out" id="demoOut" aria-live="polite"></div>
+        </div>
+        <div class="stack">
+          <div class="stack-item glass"><span class="code">FRONTEND</span><b>Base44</b><small>واجهة المستخدم</small></div>
+          <div class="stack-item glass"><span class="code">BACKEND</span><b>ASP.NET Core · .NET 10</b><small>منطق التحليل وواجهات REST</small></div>
+          <div class="stack-item glass"><span class="code">AI</span><b>Claude API</b><small>الفهم والتحليل وصياغة القرار</small></div>
+          <div class="stack-item glass"><span class="code">API</span><b>REST</b><small>ربط الواجهة بالخادم</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>كيف يفكّر رقيب</h2>
+          <p>خط معالجة واضح، كل مرحلة لها مدخل ومخرج، والإنسان يعتمد القرار في النهاية.</p>
+        </div>
+        <ol class="pipe">
+          <li class="glass"><span class="code">INPUT</span><h3>المصادر التنظيمية</h3><p>مواقع الجهات والجريدة الرسمية والتعاميم.</p></li>
+          <li class="glass"><span class="code">PARSE</span><h3>الفهم والتصنيف</h3><p>يصنّف التغيّر حسب الجهة والمجال، ويستخرج المتطلبات والمواعيد.</p></li>
+          <li class="glass"><span class="code">MATCH</span><h3>مطابقة الأثر</h3><p>يقارن المتطلبات بملف الشركة: المنتجات والعمليات والمواقع.</p></li>
+          <li class="glass"><span class="code">DECIDE</span><h3>القرار والخطة</h3><p>يقترح قرار امتثال وخطة مرتبة حسب الأولوية مع المرجع النظامي.</p></li>
+          <li class="glass hl"><span class="code">HUMAN</span><h3>مراجعة بشرية</h3><p>مسؤول الامتثال يعتمد أو يعدّل، وملاحظاته تحسّن النتائج.</p></li>
+        </ol>
+        <div class="ai-principles">
+          <div><b>قابل للتفسير</b><span>كل توصية مربوطة بنص المادة النظامية.</span></div>
+          <div><b>مستوى الأثر</b><span>كل تغيّر يُصنَّف: عالٍ، يحتاج مراجعة، أو ممتثل.</span></div>
+          <div><b>الإنسان في الحلقة</b><span>لا يُنفَّذ قرار دون اعتماد.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="innovation">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>ما الذي يميّز رقيب عن الطرق الحالية</h2>
+        </div>
+        <div class="cmp-wrap glass">
+          <table class="cmp">
+            <thead><tr><th scope="col">القدرة</th><th scope="col">المتابعة اليدوية</th><th scope="col">تنبيهات الأخبار العامة</th><th scope="col" class="me">رقيب</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">رصد مستمر للتغيّرات</th><td class="no">✕</td><td class="yes">✓</td><td class="yes me">✓</td></tr>
+              <tr><th scope="row">ربط التغيّر بمنتجات الشركة وعملياتها</th><td class="part">جزئي</td><td class="no">✕</td><td class="yes me">✓</td></tr>
+              <tr><th scope="row">قرار امتثال مقترح مع المرجع</th><td class="part">جزئي</td><td class="no">✕</td><td class="yes me">✓</td></tr>
+              <tr><th scope="row">خطة عمل بأولويات ومسؤوليات</th><td class="part">جزئي</td><td class="no">✕</td><td class="yes me">✓</td></tr>
+              <tr><th scope="row">مصمّم للأنظمة السعودية وبالعربية</th><td class="yes">✓</td><td class="part">جزئي</td><td class="yes me">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="domains">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>يبدأ بمجالات واضحة، ويتوسع لكل القطاعات</h2>
+          <p>رقيب مصمم للشركات السعودية في مختلف القطاعات، وليس للصناعة وحدها.</p>
+        </div>
+        <div class="domains">
+          <div class="domain glass"><span class="code">NCA · ECC</span><h3>الأمن السيبراني</h3><p>ضوابط الهيئة الوطنية للأمن السيبراني وتحديثاتها.</p></div>
+          <div class="domain glass"><span class="code">SASO</span><h3>المواصفات والجودة</h3><p>اللوائح الفنية والمواصفات القياسية للمنتجات.</p></div>
+          <div class="domain glass"><span class="code">ENV · HSE</span><h3>البيئة والسلامة</h3><p>متطلبات الالتزام البيئي والصحة والسلامة المهنية.</p></div>
+          <div class="domain glass"><span class="code">EXPORT</span><h3>ضوابط التصدير</h3><p>قيود وتراخيص تصدير السلع والتقنيات.</p></div>
+          <div class="domain glass"><span class="code">SECTOR</span><h3>الجهات القطاعية</h3><p>قرارات وأنظمة الجهات المشرفة على قطاعك.</p></div>
+        </div>
+        <div class="scale">
+          <div class="scale-item"><b>مصادر جديدة بالإعدادات</b><span>إضافة جهة تنظيمية لا تحتاج إعادة بناء.</span></div>
+          <div class="scale-item"><b>تكامل عبر REST</b><span>يتصل بأنظمة الشركة مثل ERP وHRIS.</span></div>
+          <div class="scale-item"><b>ملف لكل شركة</b><span>منتجات وعمليات ومواقع كل شركة تُحلَّل على حدة.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="board">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">لوحة الامتثال</span>
+          <h2>صورة واحدة لوضعك التنظيمي</h2>
+        </div>
+        <div class="board glass">
+          <div class="gauge">
+            <svg viewBox="0 0 200 200"><circle class="trk" cx="100" cy="100" r="84"/><circle class="val" id="gaugeVal" cx="100" cy="100" r="84" stroke-dasharray="527.8" stroke-dashoffset="527.8"/></svg>
+            <div class="num"><b id="gaugeNum">0%</b><span>نسبة الامتثال</span></div>
+          </div>
+          <div>
+            <div class="rows" id="rows">
+              <div class="row"><span>الأمن السيبراني</span><div class="track"><span data-w="92"></span></div><b>92%</b></div>
+              <div class="row"><span>المواصفات والجودة</span><div class="track"><span data-w="78" class="warn"></span></div><b>78%</b></div>
+              <div class="row"><span>البيئة والسلامة</span><div class="track"><span data-w="88"></span></div><b>88%</b></div>
+              <div class="row"><span>ضوابط التصدير</span><div class="track"><span data-w="95"></span></div><b>95%</b></div>
+            </div>
+            <p class="note">أرقام توضيحية لعرض شكل اللوحة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>فريق رقيب: ثلاثة أدوار تكمّل بعضها</h2>
+          <p>الذكاء الاصطناعي، والبيانات، والتجربة: كل عضو يملك جزءًا من الحل.</p>
+        </div>
+        <div class="team">
+          <div class="member glass"><span class="av" aria-hidden="true"></span><div><h3>رنا محمد الجربوع</h3><p>مطوّرة ذكاء اصطناعي</p><small>نموذج التحليل وتكامل Claude API</small></div></div>
+          <div class="member glass"><span class="av" aria-hidden="true"></span><div><h3>ورد سعيد الحداد</h3><p>محللة ذكاء اصطناعي وبيانات</p><small>البيانات التنظيمية ومنطق تقييم الأثر</small></div></div>
+          <div class="member glass"><span class="av" aria-hidden="true"></span><div><h3>امجاد الحارثي</h3><p>مصممة تجربة وواجهة المستخدم</p><small>رحلة المستخدم والواجهة</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="start">
+      <div class="wrap">
+        <div class="cta-band glass">
+          <h2>خلّ رقيب يراقب، وركّز أنت على عملك.</h2>
+          <p>نموذج أولي لوكيل ذكي يرصد التغيرات التنظيمية ويدير الامتثال.</p>
+          <a class="btn btn-primary" href="#demo" target="_blank" rel="noopener">جرّب النموذج الأولي</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 جميع الحقوق محفوظة لفريق رقيب</span>
+    </div>
+  </footer>
+</div>
+
+<!-- three.js r128 (3D radar globe). Loads from the public CDN; if that fails it tries
+     a local copy in vendor/ (see README). Without either, the page shows its static
+     gradient background and everything else keeps working. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>window.THREE || document.write('<script src="vendor/three.min.js"><\/script>');</script>
+<script src="js/main.js"></script>
+</body>
+</html>
