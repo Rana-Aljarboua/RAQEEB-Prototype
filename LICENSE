@@ -1,0 +1,67 @@
+RAQEEB | رقيب — Interface Prototype
+Proprietary Notice — All Rights Reserved
+
+Copyright (c) 2026 Team Raqeeb: Rana Mohammed Aljarbou, Ward Saeed Alhaddad, and Amjad Alharthi.
+All rights reserved.
+
+1. Ownership
+This repository and the website published from it, including the source code,
+interface and visual design, text, graphics, the RAQEEB / رقيب name and logo,
+the poster, and the project presentation (together, the "Materials"), are the
+property of the rights holders named above.
+
+2. No license granted
+No license or right is granted under this notice, whether express or implied.
+Viewing this repository or the published website does not give anyone permission
+to copy, reproduce, modify, adapt, translate, distribute, publish, sublicense,
+sell, reuse, or exploit commercially any part of the Materials, in whole or in
+part, without prior written permission from the rights holders.
+
+3. Purpose of public visibility
+The Materials are publicly visible only so that people can view and evaluate
+RAQEEB as a demonstration. Public visibility does not place them in the public
+domain and does not make them open source.
+
+4. GitHub Terms of Service
+GitHub's Terms of Service let GitHub users view this public repository and fork
+it within GitHub. That does not grant any other right in the Materials, including
+any right to use, modify, redistribute, or exploit them outside GitHub.
+
+5. Third-party components
+The following third-party components remain under their own licenses and are
+not covered by this notice:
+- three.js r128: MIT License
+- React and ReactDOM 18.3.1: MIT License
+- html2canvas 1.4.1: MIT License
+- jsPDF 2.5.1: MIT License
+- jsdiff (bundled in app/index.html): BSD 3-Clause License
+- IBM Plex Sans Arabic, IBM Plex Sans, and IBM Plex Mono fonts (via Google
+  Fonts): SIL Open Font License 1.1
+
+6. Permissions
+To request permission to use any part of the Materials, contact the rights
+holders at: ranaasiri111@gmail.com
+
+---
+
+إشعار ملكية — جميع الحقوق محفوظة
+
+حقوق النشر © 2026 فريق رقيب: رنا محمد الجربوع، وورد سعيد الحداد، وأمجاد الحارثي.
+جميع الحقوق محفوظة.
+
+هذا المستودع والموقع المنشور منه، بما في ذلك الكود المصدري، وتصميم الواجهة،
+والنصوص، والرسومات، واسم رقيب / RAQEEB وشعاره، والبوستر، والعرض التقديمي،
+ملكٌ لأصحاب الحقوق المذكورين أعلاه.
+
+لا يمنح هذا الإشعار أي ترخيص أو حق، صريحًا كان أو ضمنيًا. ولا يعني الاطلاع على
+المستودع أو الموقع المنشور أي إذن بنسخ أي جزء من هذه المواد أو تعديله أو توزيعه
+أو إعادة استخدامه أو استغلاله تجاريًا، كليًا أو جزئيًا، دون إذن كتابي مسبق من
+أصحاب الحقوق.
+
+إتاحة المواد للعرض العام هي لغرض الاطلاع على رقيب وتقييمه فقط، ولا تجعلها ملكًا
+عامًا أو مفتوحة المصدر.
+
+المكونات الخارجية المذكورة في البند 5 أعلاه تخضع لتراخيصها الخاصة، ولا يشملها
+هذا الإشعار.
+
+للاستئذان: ranaasiri111@gmail.com
