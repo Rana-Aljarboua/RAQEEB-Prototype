@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/raqeeb-banner.jpg" alt="RAQEEB — AI-Powered Regulatory Intelligence & Compliance" width="100%">
+</p>
+
 # RAQEEB | AI-Powered Regulatory Intelligence & Compliance
 
 **Transforming regulatory changes into actionable compliance insights.**
