@@ -1,158 +1,142 @@
 # RAQEEB | AI-Powered Regulatory Intelligence & Compliance
 
-<p align="center">
-  <strong>Transforming Regulatory Changes into Actionable Compliance Insights.</strong>
-</p>
+**Transforming regulatory changes into actionable compliance insights.**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge" alt="AI-Powered">
-  <img src="https://img.shields.io/badge/GRC-Regulatory%20Intelligence-purple?style=for-the-badge" alt="GRC">
-  <img src="https://img.shields.io/badge/Project-Prototype-orange?style=for-the-badge" alt="Prototype">
-</p>
+RAQEEB is an AI-powered regulatory intelligence and compliance platform designed to help organizations monitor regulatory developments, understand their potential business impact, and manage compliance-related changes through structured, evidence-based analysis.
+
+By combining automated regulatory monitoring, AI-driven analysis, and organization-specific impact assessment, RAQEEB aims to simplify how organizations stay informed and respond to evolving regulatory requirements.
+
+**Live Prototype:** [Explore RAQEEB](https://rana-aljarboua.github.io/RAQEEB-Prototype/)
+
+**Project Presentation:** [View RAQEEB Presentation](https://rana-aljarboua.github.io/RAQEEB-Prototype/Raqeeb%20Presentation.pdf)
 
 ---
 
-## Overview
+## Why RAQEEB?
 
-RAQEEB is an AI-powered regulatory intelligence platform designed to help organizations monitor regulatory updates, identify changes, understand their implications, and translate them into structured compliance insights.
+Regulatory requirements evolve continuously, making it challenging for organizations to identify relevant updates, understand their implications, and determine the actions required to maintain compliance.
 
-Organizations operate in an evolving regulatory environment where keeping track of multiple authorities, interpreting new requirements, and assessing their potential impact can be challenging.
+RAQEEB addresses this challenge by connecting regulatory intelligence with organizational context.
 
-RAQEEB aims to simplify this process by combining artificial intelligence, regulatory analysis, and Governance, Risk, and Compliance (GRC) principles within a unified workflow.
+Key objectives include:
 
-The goal is to move beyond simply collecting regulatory updates — towards understanding what changed, why it matters, and what organizations may need to address.
-
-## The Challenge
-
-Regulatory compliance requires continuous attention to changing requirements. Organizations need to do more than read new publications; they need to identify relevant changes and understand how these changes may affect their operations.
-
-Key challenges include:
-
-- Monitoring updates across multiple regulatory sources.
-- Identifying new or modified regulatory requirements.
-- Comparing current and previous regulatory versions.
-- Extracting effective dates and supporting evidence.
-- Understanding potential implications for organizational compliance.
-- Turning regulatory information into actionable follow-up.
+- **Regulatory Awareness:** Monitor updates from relevant regulatory authorities.
+- **Intelligent Analysis:** Extract regulatory information and identify meaningful changes.
+- **Impact Assessment:** Evaluate potential implications based on organizational activities and compliance requirements.
+- **Evidence-Based Insights:** Link analytical findings to their supporting regulatory sources.
+- **Actionable Recommendations:** Help compliance professionals understand changes and identify appropriate follow-up actions.
 
 ## How It Works
 
-The platform follows a connected workflow that transforms regulatory publications into organized compliance insights.
+RAQEEB follows a structured regulatory intelligence workflow:
 
-```mermaid
-flowchart TD
-    A["Regulatory Sources"] --> B["Content Collection & Extraction"]
-    B --> C["Regulatory Change Detection"]
-    C --> D["AI-Powered Analysis"]
-    D --> E["Compliance Insights & Recommendations"]
-    E --> F["Email Notifications"]
-    E --> G["In-App Notifications"]
-```
-
-### Workflow Stages
-
-| Stage | Description |
-|---|---|
-| Regulatory Monitoring | Collecting updates from relevant regulatory sources. |
-| Content Extraction | Extracting information from regulatory publications and documents. |
-| Change Detection | Comparing regulatory versions to identify new or modified content. |
-| AI-Powered Analysis | Analyzing regulatory information and organizing relevant findings. |
-| Compliance Insights | Presenting requirements, effective dates, and potential implications. |
-| Notifications | Delivering updates through email and in-app notifications. |
+1. **Regulatory Monitoring** – Collect updates from relevant regulatory sources.
+2. **Information Extraction** – Identify regulatory content, requirements, and relevant information.
+3. **Change Analysis** – Compare regulatory versions and identify changes.
+4. **AI-Powered Assessment** – Analyze regulatory changes in context.
+5. **Impact Identification** – Connect relevant changes to organizational activities and compliance requirements.
+6. **Insights & Alerts** – Present findings, supporting evidence, and recommendations for review.
 
 ## Core Capabilities
 
-| Capability | Value |
+| Capability | Description |
 |---|---|
-| **Regulatory Monitoring** | Supports continuous tracking of regulatory developments. |
-| **Change Detection** | Highlights differences between regulatory versions. |
-| **Effective-Date Analysis** | Identifies effective dates supported by regulatory evidence. |
-| **Compliance Impact Analysis** | Helps assess the implications of regulatory changes. |
-| **Recommendations & Alerts** | Supports awareness and follow-up on relevant changes. |
-| **Evidence-Based Insights** | Connects findings to supporting regulatory sources. |
+| Regulatory Monitoring | Collect regulatory publications and updates from relevant authorities. |
+| AI-Powered Analysis | Analyze regulatory content and extract structured information. |
+| Change Detection | Identify differences between regulatory versions and updates. |
+| Impact Assessment | Evaluate potential implications based on organizational context. |
+| Effective-Date Analysis | Identify effective dates supported by regulatory evidence. |
+| Recommendations & Alerts | Present validated recommendations and track regulatory change alerts. |
+| Notifications | Support notification workflows through email and Slack. |
+| Scheduled Processing | Automate recurring monitoring and assessment workflows. |
+| Evidence-Based Decision Support | Connect findings to authoritative regulatory publications. |
 
 ## Regulatory Coverage
 
-RAQEEB is designed to monitor Saudi regulatory sources, including:
+RAQEEB includes dedicated connectors for selected Saudi regulatory sources:
 
-- **NCA** — National Cybersecurity Authority.
-- **SASO** — Saudi Standards, Metrology and Quality Organization.
-- **Umm Al-Qura** — Saudi Arabia's Official Gazette.
-- **Ministry of Energy** — Regulatory publications and updates.
+- **National Cybersecurity Authority (NCA)**
+- **Saudi Standards, Metrology and Quality Organization (SASO)**
+- **Umm Al-Qura Gazette (UQN)**
+- **Ministry of Energy**
 
-The connector-based approach is designed to accommodate additional regulatory sources as the platform evolves.
+Its extensible connector architecture is designed to accommodate additional regulatory sources.
 
-## Organizational Context
+## Built for Organizational Context
 
-Regulatory requirements do not affect every organization in the same way. Their relevance depends on the organization's industry, activities, operations, and applicable frameworks.
+Regulatory requirements do not affect every organization in the same way.
 
-RAQEEB incorporates organizational context to support more relevant regulatory analysis, considering:
+RAQEEB is designed around configurable organizational profiles that consider:
 
-- Industry sectors and business activities.
-- Regulatory jurisdictions and applicable frameworks.
-- Products and operational processes.
-- Internal policies and compliance requirements.
+- Industry and business sector
+- Jurisdictions and regulatory scope
+- Business activities
+- Compliance frameworks
+- Products and services
+- Internal processes and policies
+- Policy requirements
+
+This organizational context helps make regulatory assessments more relevant to the activities and compliance obligations of each organization.
 
 ## Technology Stack
 
+RAQEEB combines technologies across artificial intelligence, software engineering, data processing, and regulatory analysis.
+
 | Area | Technologies |
 |---|---|
-| Programming Language | Python |
+| Programming | Python |
+| AI Integration | Anthropic Claude |
 | Backend Framework | FastAPI |
-| Database & ORM | SQLite, SQLAlchemy |
-| AI Integration | Anthropic Claude, Structured Tool Use |
-| Data Extraction | Web Content Processing, PDF Extraction |
+| Data Management | SQLAlchemy |
+| Regulatory Collection | Asynchronous HTTP and web parsing |
+| Data Processing | Structured extraction and analysis |
+| Change Analysis | Version comparison and obligation calculations |
 | Scheduling | APScheduler |
-| Notifications | Email, In-App Notifications |
+| Notifications | Email and Slack |
 | Testing | Pytest |
 
-*The technologies above describe the broader RAQEEB project. This public repository showcases the frontend prototype and presentation, not the private backend implementation.*
+## System Architecture
+
+RAQEEB follows an API-first architecture designed to connect regulatory data collection, analysis, organizational context, and compliance workflows.
+
+Its core design brings together:
+
+- Regulatory data collection
+- Structured information extraction
+- Regulatory change analysis
+- AI-assisted impact assessment
+- Organizational profile management
+- Evidence-linked findings
+- Notifications and scheduled workflows
+
+The architecture is designed to support integration with organizational systems and future extensions.
 
 ## Evidence-Based Decision Support
 
-A central principle of RAQEEB is that regulatory insights should be traceable to their supporting sources.
+Reliable compliance decisions require more than automated analysis.
 
-The platform emphasizes connecting identified changes, extracted requirements, and effective dates to relevant regulatory evidence. This supports transparency, review, and a clearer understanding of the regulatory basis behind analytical findings.
+RAQEEB emphasizes traceability by connecting findings to their supporting regulatory publications. This enables compliance professionals to review the underlying evidence, validate analytical conclusions, and make informed decisions.
 
-## My Role & Contributions
-
-I contributed to RAQEEB across three interconnected areas:
-
-### AI Developer
-- Contributed to the development of the AI Agent's logic and analytical workflow.
-- Worked on regulatory information analysis and the organization of structured outputs.
-- Contributed to processing logic that transforms regulatory information into useful insights.
-
-### GRC Analyst
-- Analyzed regulatory information and compliance requirements.
-- Examined regulatory changes and their potential implications for organizational compliance.
-- Contributed to connecting regulatory analysis with organizational requirements.
-
-### Frontend Development
-- Collaborated with the team on developing the user interface.
-- Contributed to presenting platform capabilities and analytical outputs through a clear user experience.
+The goal is to make regulatory intelligence more transparent, structured, and actionable.
 
 ## Live Prototype
 
-Explore the public-facing RAQEEB prototype:
+The public RAQEEB Prototype provides an interactive introduction to the project's concept and user experience.
 
-[**Launch RAQEEB Prototype →**](https://rana-aljarboua.github.io/RAQEEB-Prototype/)
+**[Launch RAQEEB Prototype →](https://rana-aljarboua.github.io/RAQEEB-Prototype/)**
 
 ## Project Presentation
 
-Explore the project concept, objectives, and overall approach:
+Explore the project presentation for an overview of RAQEEB's vision, approach, capabilities, and development.
 
-[**View Project Presentation (PDF) →**](./Raqeeb%20Presentation.pdf)
+**[View Project Presentation (PDF) →](https://rana-aljarboua.github.io/RAQEEB-Prototype/Raqeeb%20Presentation.pdf)**
 
-## Repository Scope
+## Development & Contributions
 
-This public repository serves as a portfolio showcase for the RAQEEB frontend prototype and project presentation.
+RAQEEB was developed collaboratively, bringing together work across artificial intelligence, regulatory analysis, software development, and product design.
 
-It is separate from the original private project repository and does not include the private backend, database, or internal source code.
+The project reflects an effort to explore how AI-powered systems can help organizations understand regulatory changes and manage compliance-related challenges.
 
 ---
 
-<p align="center">
-  <strong>RAQEEB</strong><br>
-  Bridging Artificial Intelligence, Regulatory Intelligence, and Compliance.
-</p>
+**RAQEEB — Turning Regulatory Complexity into Actionable Intelligence.**
